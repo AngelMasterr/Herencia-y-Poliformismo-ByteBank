@@ -10,8 +10,10 @@ public class text_gerente {
 		gerente.setDocumento("999666333");
 		gerente.setSalario(5000);	
 		gerente.setTipo(1);
+		gerente.setClave("aluraonline");
 		
-		System.out.println(gerente.getBonificacion());		
+		System.out.println(gerente.getBonificacion());	
+		System.out.println(gerente.iniciarSecion("aluraonline"));
 		
 	}
 

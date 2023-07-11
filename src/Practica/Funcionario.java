@@ -41,16 +41,7 @@ public class Funcionario {
 	}
 
 	// la bonificacion del funcionario es el 10% del salario
-	// la bonificacion del gerente es el 100% del salario	
-
 	public double getBonificacion() {
-		if ( this.tipo == 0 ) {
-			return this.salario * 0.1;
-		}else if (this.tipo == 1){
-			return this.salario * 1;
-		}else {
-			System.out.println("El valor de tipo debe ser 1 o 0");
-			return 0;			
-		}			
+		return this.salario * 0.1;	
 	}				
 }
