@@ -9,7 +9,7 @@ public class text_referencias {
 		funcionario.setNombre("Diego");
 		
 		// péro un objeto hijo no se puede crear con una clase padre
-		Gerente gerente = new Funcionario(); // new Gerente
+		Gerente gerente = new Gerente(); // new Gerente
 		gerente.setNombre("Jimena");
 		
 		funcionario.setSalario(1000);

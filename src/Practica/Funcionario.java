@@ -1,6 +1,8 @@
 package Practica;
 
-public class Funcionario {
+// abstrac: crea una clase abstracta, la cual solo puede ser utilzada para crear clases hijos como "Gerente" o "Contador"
+// los objetos no pueden ser creados con esta clase, solo con las clases hijos
+public abstract class Funcionario {
 
 	private String nombre;
 	private String documento;
@@ -40,8 +42,6 @@ public class Funcionario {
 		this.tipo = tipo;
 	}
 
-	// la bonificacion del funcionario es el 10% del salario
-	public double getBonificacion() {
-		return this.salario * 0.1;	
-	}				
+	// al ser un metodo abstracto, obliga a que todas las clases hijas realizen un metodo getBonificación para que pueda funcionar
+	public abstract double getBonificacion();
 }

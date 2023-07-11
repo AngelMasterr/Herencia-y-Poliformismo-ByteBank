@@ -1,9 +1,9 @@
 package Practica;
 
 // crear clase Cuenta (objeto)
-public class Cuenta {
-	private double saldo; // private: de esta manera el saldo no se podra modificar externamente, solo desde metodos de este archivo
-	private int agencia;
+public abstract class Cuenta {
+	protected double saldo; // protected: solo es accesible desde sus clases hijas
+	private int agencia;	// private: solo es accesible desde este archivo.
 	private int numero;
 	private Cliente titular; // tipo de dato de titular es Cliente, hace referencia a la clase Cliente
 
@@ -16,12 +16,11 @@ public class Cuenta {
 		
 		total++;		
 	}
-
-	// crear metodos
+	
 	// void: metodo que no retorna valor, solo ejecuta
-	public void depositar(double valor) {
-		this.saldo += valor;
-	}
+	// al ser abstract este metodo obliga a que todos sus hijos tenan un metodo de depositar.
+	public abstract void depositar(double valor);
+	
 
 	// boolean: metodo que retorna dos valores (ej: true o false)
 	public boolean retirar(double valor) {

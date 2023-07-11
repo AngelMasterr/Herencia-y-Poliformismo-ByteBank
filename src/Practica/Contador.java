@@ -1,10 +1,12 @@
 package Practica;
 
 public class Contador extends Funcionario {
-	
-	public double getBonificacion() {
-		System.out.println("Ejecutando desde Contador");
-		return 750;
+
+	@Override
+	public double getBonificacion() {		
+		return super.getSalario()*0.1;
 	}
+	
+	
 
 }

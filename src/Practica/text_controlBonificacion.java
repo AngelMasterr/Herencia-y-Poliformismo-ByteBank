@@ -4,7 +4,7 @@ public class text_controlBonificacion {
 	
 	public static void main(String[] args) {
 		
-		Funcionario Angel = new Funcionario();
+		Funcionario Angel = new Contador();
 		Angel.setSalario(1000);
 		
 		Gerente Jimena = new Gerente();

@@ -16,6 +16,6 @@ public class Gerente extends Funcionario {
 	// sobre-escritura de metodo, ya que la clase padre tiene un mismo metodo
 	public double getBonificacion() {
 		System.out.println("Ejecutando desde Gerente");
-		return super.getSalario() + super.getBonificacion();
+		return super.getSalario() + (super.getSalario()*0.1);
 	}
 }
