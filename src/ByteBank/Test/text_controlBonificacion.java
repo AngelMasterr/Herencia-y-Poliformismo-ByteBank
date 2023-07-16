@@ -1,9 +1,13 @@
 package ByteBank.Test;
-
+/*
 import ByteBank.Modelo.Contador;
 import ByteBank.Modelo.Funcionario;
 import ByteBank.Modelo.Gerente;
-import ByteBank.Modelo.controlBonificacion;
+import ByteBank.Modelo.controlBonificacion;*/
+
+// De esta manera puedo importar todas las clases de la carpeta
+import ByteBank.Modelo.*;
+
 
 public class text_controlBonificacion {
 	

@@ -1,5 +1,12 @@
 package ByteBank.Modelo;
 
+/**
+ * Cuenta va crear nuevas instancias de CuentaCorriente y CuentaAhorros
+ * 
+ * @version 1.0
+ * @author AngelD
+ */
+
 //abstrac: crea una clase abstracta, la cual solo puede ser utilzada para crear clases hijos como "Gerente" o "Contador"
 //los objetos no pueden ser creados con esta clase, solo con las clases hijos
 public abstract class Cuenta {
@@ -10,6 +17,11 @@ public abstract class Cuenta {
 
 	private static int total = 0;
 
+	/**
+	 * Instancia una cuenta usando agencia y numero (constructor)
+	 * @param agencia
+	 * @param numero
+	 */
 	public Cuenta(int agencia, int numero) { // este constructor obliga a que esta clase inicialice con estos atributos
 		this.agencia = agencia;
 		this.numero = numero;
