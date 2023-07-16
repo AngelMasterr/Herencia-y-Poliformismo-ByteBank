@@ -1,6 +1,7 @@
-package Practica;
+package ByteBank;
 
-// crear clase Cuenta (objeto)
+//abstrac: crea una clase abstracta, la cual solo puede ser utilzada para crear clases hijos como "Gerente" o "Contador"
+//los objetos no pueden ser creados con esta clase, solo con las clases hijos
 public abstract class Cuenta {
 	protected double saldo; // protected: solo es accesible desde sus clases hijas
 	private int agencia;	// private: solo es accesible desde este archivo.

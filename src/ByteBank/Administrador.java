@@ -1,4 +1,4 @@
-package Practica;
+package ByteBank;
 
 public class Administrador extends Funcionario implements Autenticable {
 

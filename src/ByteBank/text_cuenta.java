@@ -1,4 +1,4 @@
-package Practica;
+package ByteBank;
 
 public class text_cuenta {
 	

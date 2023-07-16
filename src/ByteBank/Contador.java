@@ -1,4 +1,4 @@
-package Practica;
+package ByteBank;
 
 public class Contador extends Funcionario {
 

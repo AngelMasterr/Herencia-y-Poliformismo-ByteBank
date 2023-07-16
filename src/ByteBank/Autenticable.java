@@ -1,4 +1,4 @@
-package Practica;
+package ByteBank;
 
 // interface: todos los atributos son abstractos, no hay manera de acceder a ellos desde otro archivo
 // tampoco puede extenderse a otra clase que no sea interface
