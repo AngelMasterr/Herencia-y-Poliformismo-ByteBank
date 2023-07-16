@@ -1,4 +1,6 @@
-package ByteBank;
+package ByteBank.Test;
+
+import ByteBank.Modelo.Gerente;
 
 public class text_gerente {
 	

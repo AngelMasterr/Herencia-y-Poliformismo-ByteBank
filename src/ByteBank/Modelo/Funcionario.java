@@ -1,4 +1,4 @@
-package ByteBank;
+package ByteBank.Modelo;
 
 // abstrac: crea una clase abstracta, la cual solo puede ser utilzada para crear clases hijos como "Gerente" o "Contador"
 // los objetos no pueden ser creados con esta clase, solo con las clases hijos

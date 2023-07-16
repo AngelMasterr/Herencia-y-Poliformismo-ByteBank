@@ -1,4 +1,4 @@
-package ByteBank;
+package ByteBank.Modelo;
 
 // extends: extiende los atributos de otra clase "Funcionario" para si mismo
 

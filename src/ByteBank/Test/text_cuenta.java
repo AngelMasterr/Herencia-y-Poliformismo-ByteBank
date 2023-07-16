@@ -1,4 +1,7 @@
-package ByteBank;
+package ByteBank.Test;
+
+import ByteBank.Modelo.CuentaAhorros;
+import ByteBank.Modelo.CuentaCorriente;
 
 public class text_cuenta {
 	

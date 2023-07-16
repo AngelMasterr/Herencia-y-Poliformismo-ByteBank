@@ -1,4 +1,8 @@
-package ByteBank;
+package ByteBank.Test;
+
+import ByteBank.Modelo.Administrador;
+import ByteBank.Modelo.Gerente;
+import ByteBank.Modelo.SistemaInterno;
 
 public class text_sistemaInterno {
 	

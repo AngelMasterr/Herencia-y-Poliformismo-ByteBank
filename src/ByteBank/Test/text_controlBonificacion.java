@@ -1,4 +1,9 @@
-package ByteBank;
+package ByteBank.Test;
+
+import ByteBank.Modelo.Contador;
+import ByteBank.Modelo.Funcionario;
+import ByteBank.Modelo.Gerente;
+import ByteBank.Modelo.controlBonificacion;
 
 public class text_controlBonificacion {
 	

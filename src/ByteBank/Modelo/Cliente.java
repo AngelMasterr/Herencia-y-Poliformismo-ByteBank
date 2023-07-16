@@ -1,4 +1,4 @@
-package ByteBank;
+package ByteBank.Modelo;
 
 public class Cliente implements Autenticable	{
 	private String nombre;

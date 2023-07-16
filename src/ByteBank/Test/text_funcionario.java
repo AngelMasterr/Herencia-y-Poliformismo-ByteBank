@@ -1,4 +1,7 @@
-package ByteBank;
+package ByteBank.Test;
+
+import ByteBank.Modelo.Contador;
+import ByteBank.Modelo.Funcionario;
 
 public class text_funcionario {
 	
