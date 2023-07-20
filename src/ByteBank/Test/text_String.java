@@ -24,6 +24,8 @@ public class text_String {
 		System.out.println(nombre);
 		int indice = nombre.indexOf("d"); // imprimir la posicion del caracter
 		System.out.println(indice);
+		curso = curso.toUpperCase();
+		System.out.println(curso);
 		System.out.println();
 		
 		printLine(curso);
