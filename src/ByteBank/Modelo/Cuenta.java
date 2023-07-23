@@ -11,8 +11,8 @@ package ByteBank.Modelo;
 //los objetos no pueden ser creados con esta clase, solo con las clases hijos
 public abstract class Cuenta {
 	protected double saldo; // protected: solo es accesible desde sus clases hijas
-	private int agencia;	// private: solo es accesible desde este archivo.
-	private int numero;
+	protected int agencia;	// private: solo es accesible desde este archivo.
+	protected int numero;
 	private Cliente titular; // tipo de dato de titular es Cliente, hace referencia a la clase Cliente
 
 	private static int total = 0;

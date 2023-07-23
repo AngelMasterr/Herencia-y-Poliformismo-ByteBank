@@ -4,6 +4,12 @@ public class text_main {
 	
 	public static void main(String[] args) {
 		
+		// que significa "args" del array Srtring[] en el main?
+		
+		for (int i = 0; i < args.length; i++) {
+			System.out.println(i);
+		}
+		
 		int edad1 = 20;
 		int edad2 = 15;
 		int edad3 = 67;

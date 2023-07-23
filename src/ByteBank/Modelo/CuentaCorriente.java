@@ -4,8 +4,9 @@ public class CuentaCorriente extends Cuenta {
 
 	// como la clase Padre tiene un constructor, obliga a que le demos los parametros que pide "int agencia, int numero"
 	// por eso esta clase hija, debe tener tambien un constuctor con los parametros que exige el padre
+	
 	public CuentaCorriente(int agencia, int numero){
-		super(agencia, numero);
+		super(agencia, numero);		
 	}
 	
 	@Override
@@ -17,6 +18,11 @@ public class CuentaCorriente extends Cuenta {
 	@Override
 	public void depositar(double valor) {
 		this.saldo += valor;
+	}
+	
+	@Override
+	public String toString() {
+        return "CC numero: "+this.numero+" CC agencia: " +this.agencia;
 	}
 	
 }
