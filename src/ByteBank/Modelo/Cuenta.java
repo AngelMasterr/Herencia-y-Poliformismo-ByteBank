@@ -11,8 +11,16 @@ package ByteBank.Modelo;
 //los objetos no pueden ser creados con esta clase, solo con las clases hijos
 public abstract class Cuenta {
 	protected double saldo; // protected: solo es accesible desde sus clases hijas
-	protected int agencia;	// private: solo es accesible desde este archivo.
-	protected int numero;
+	private int agencia;	// private: solo es accesible desde este archivo.
+	private int numero;
+		
+	public int getNumero() {
+		return numero;
+	}
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
 	private Cliente titular; // tipo de dato de titular es Cliente, hace referencia a la clase Cliente
 
 	private static int total = 0;
@@ -98,4 +106,20 @@ public abstract class Cuenta {
 		return titular;
 	}
 
+	@Override
+	public String toString() {
+        return "CC numero: "+this.numero+" CC agencia: " +this.agencia;
+	}
+	
+	// compara que los datos de agencia y numero no se repiten en diferentes cuentas
+	public boolean esIgual(Cuenta cuenta) {		
+		return this.agencia == cuenta.getAgencia() && this.numero == cuenta.getNumero();		
+	}	
+	// Corrobora los mismo de arriba pero con un metodo directo de java "equals"
+	@Override
+	public boolean equals(Object obj) {
+		Cuenta cuenta = (Cuenta) obj;
+		return this.agencia == cuenta.getAgencia() && this.numero == cuenta.getNumero();			
+	}
+	
 }

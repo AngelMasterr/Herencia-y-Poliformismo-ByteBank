@@ -18,11 +18,7 @@ public class CuentaCorriente extends Cuenta {
 	@Override
 	public void depositar(double valor) {
 		this.saldo += valor;
-	}
+	}	
 	
-	@Override
-	public String toString() {
-        return "CC numero: "+this.numero+" CC agencia: " +this.agencia;
-	}
 	
 }
