@@ -49,6 +49,18 @@ public class text_OrdenarListaString {
 		for (Cuenta cuenta : lista) {
 		    System.out.println(cuenta + ", " + cuenta.getTitular().getNombre());
 		}
+		
+		// Ordenar las Cuentas por el nombre usando el metodo a nivel de parametro
+		lista.sort(new Comparator<Cuenta>() {
+			@Override
+			public int compare(Cuenta o1, Cuenta o2) {
+				return o1.getTitular().getNombre().compareTo(o2.getTitular().getNombre());
+			}				
+		});
+		System.out.println("ordenando con el metodo a nivel de parametro");
+		for (Cuenta cuenta : lista) {
+		    System.out.println(cuenta + ", " + cuenta.getTitular().getNombre());
+		}
 	}
 }
 //Crear la clase para ordenar las cuentas por su nombre, usando el implements "Comparator"
