@@ -38,7 +38,7 @@ public class text_Lambda {
 			System.out.println(cuenta);
 		}
 		// vamos a usar forEach como metodo de lista para imprimir
-		System.out.println("usando lista.forEach para imprimir");
+		System.out.println("usando lista.forEach para imprimir.");
 		
 		lista.forEach(cuenta ->	System.out.println(cuenta));
 		
