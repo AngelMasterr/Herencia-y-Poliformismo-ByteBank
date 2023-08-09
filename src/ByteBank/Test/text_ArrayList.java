@@ -34,7 +34,7 @@ public class text_ArrayList {
 		}
 		// contain: retorna un boolean, si el array contiene o no el valor
 		if ( lista.contains(cc1)){
-			System.out.println("la lista contiene ese objeto "+cc1);
+			System.out.println("la lista contiene ese objeto. "+cc1);
 		}else {
 			System.out.println("la lista no contiene ese objeto "+cc1);
 		}
